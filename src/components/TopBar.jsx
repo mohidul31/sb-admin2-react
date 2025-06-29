@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import React from "react";
 
 export default function TopBar() {
@@ -250,10 +251,10 @@ export default function TopBar() {
             className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
             aria-labelledby="userDropdown"
           >
-            <a className="dropdown-item" href="#">
+            <NavLink className="dropdown-item" to="/profile">
               <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
               Profile
-            </a>
+            </NavLink>
             <a className="dropdown-item" href="#">
               <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
               Settings
