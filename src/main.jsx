@@ -10,12 +10,12 @@ import { createRoot } from "react-dom/client";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <MainLayout>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-      </MainLayout>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="profile" element={<Profile />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   </StrictMode>
 );
